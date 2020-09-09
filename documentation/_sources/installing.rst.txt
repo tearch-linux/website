@@ -6,7 +6,7 @@ TeArch Linux'u kurmak oldukça kolay ve zahmetsizdir. Aşağıdaki adımları ta
 En Güncel Kurulum Medyasını İndirin
 ----------
 TeArch Linux'a ait en yeni kurulum medyasını `indirme sayfamızdan <https://tearch-linux.github.io/download>`_ indirebilirsiniz. 
-  .. figure:: _static/images/pic02.jpg
+  .. figure:: _static/images/download_menu.png
       :alt: TeArch Linux'un indirme sayfası.
 
 
