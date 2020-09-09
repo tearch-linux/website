@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="tr" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TeArch Linux Kurulumu &mdash; TeArch Linux  belgelendirmesi</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Dizin" href="genindex.html" />
+    <link rel="search" title="Ara" href="search.html" />
+    <link rel="prev" title="TeArch Linux Dökümantasyonu" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TeArch Linux
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Belgeleri arayın" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TeArch Linux Kurulumu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#en-guncel-kurulum-medyasini-indirin">En Güncel Kurulum Medyasını İndirin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kurulum-medyasini-usb-bellege-veya-dvd-ye-yazdirin">Kurulum Medyasını USB Belleğe veya DVD’ye Yazdırın</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bilgisayari-usb-veya-dvd-den-baslatin">Bilgisayarı USB veya DVD’den başlatın</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kuruluma-baslayin">Kuruluma Başlayın</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kurulum-araci-kullanimi">Kurulum Aracı Kullanımı</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#genel-ayarlari-yapmak">Genel Ayarları Yapmak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disk-bolumlemesi">Disk Bölümlemesi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-disk-bolumlemek">Manual Disk Bölümlemek</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#efi-destekleyen-bilgisayarlarda-kurulum-yapmak">EFI Destekleyen Bilgisayarlarda Kurulum Yapmak:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#efi-desteklemeyen-eski-bios-bilgisayarlarda-kurulum-yapmak">EFI Desteklemeyen (Eski BIOS) Bilgisayarlarda Kurulum Yapmak:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#beklemek">Beklemek</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TeArch Linux</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>TeArch Linux Kurulumu</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/installing.rst.txt" rel="nofollow"> Sayfa kaynağını görüntüle</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tearch-linux-kurulumu">
+<h1>TeArch Linux Kurulumu<a class="headerlink" href="#tearch-linux-kurulumu" title="Bu başlık için kalıcı bağlantı">¶</a></h1>
+<p>TeArch Linux’u kurmak oldukça kolay ve zahmetsizdir. Aşağıdaki adımları takip ederek TeArch Linux’u çok kısa bir sürede kolayca kurabilirsiniz.</p>
+<div class="section" id="en-guncel-kurulum-medyasini-indirin">
+<h2>En Güncel Kurulum Medyasını İndirin<a class="headerlink" href="#en-guncel-kurulum-medyasini-indirin" title="Bu başlık için kalıcı bağlantı">¶</a></h2>
+<dl>
+<dt>TeArch Linux’a ait en yeni kurulum medyasını <a class="reference external" href="https://tearch-linux.github.io/download">indirme sayfamızdan</a> indirebilirsiniz.</dt><dd><div class="figure align-default">
+<img alt="TeArch Linux'un indirme sayfası." src="_images/pic02.jpg" />
+</div>
+</dd>
+</dl>
+</div>
+<div class="section" id="kurulum-medyasini-usb-bellege-veya-dvd-ye-yazdirin">
+<h2>Kurulum Medyasını USB Belleğe veya DVD’ye Yazdırın<a class="headerlink" href="#kurulum-medyasini-usb-bellege-veya-dvd-ye-yazdirin" title="Bu başlık için kalıcı bağlantı">¶</a></h2>
+<p><strong>Windows’ta Canlı USB veya DVD Oluşturmak</strong>
+Windows’ta usb veya dvd medyası oluşturmak için <a class="reference external" href="https://www.balena.io/etcher/">Etcher</a> veya <a class="reference external" href="https://rufus.ie/">Rufus</a> programlarını tercih edebilirsiniz.</p>
+<div class="figure align-default">
+<img alt="Etcher'a ait bir gif." src="_images/etcher.gif" />
+</div>
+</div>
+<div class="section" id="bilgisayari-usb-veya-dvd-den-baslatin">
+<h2>Bilgisayarı USB veya DVD’den başlatın<a class="headerlink" href="#bilgisayari-usb-veya-dvd-den-baslatin" title="Bu başlık için kalıcı bağlantı">¶</a></h2>
+<p>Kuruluma başlamak için bilgisayarınızı yeniden başlatın ve boot menüsüne girin. Boot menüsü anakarttan anakarta farklılık gösterse de genel olarak <strong>F12</strong>, <strong>Del</strong>, <strong>Esc</strong> ve <strong>F2</strong> tuşlarıdır. Daha fazla bilgi için <a class="reference external" href="https://www.technopat.net/sosyal/konu/boot-menuesue-kisayol-tuslari-veritabani.10898/">bu linke</a> bakabilirsiniz.</p>
+<p>Her şeye rağmen yine de USB veya DVD’den başlatamıyorsanız şu yolları deneyebilirsiniz:</p>
+<p><strong>-</strong> Bios’tan “Secure Boot”u devre dışı bırakmak.
+<strong>-</strong> Boot menüsü yerine boot sırasını BIOS’tan değiştirmek. BIOS tuşunuzu öğrenmek için de <a class="reference external" href="https://www.technopat.net/sosyal/konu/boot-menuesue-kisayol-tuslari-veritabani.10898/">bu linke</a> bakabilirsiniz.</p>
+<div class="figure align-default">
+<img alt="Boot menüsüne ait bir fotoğraf." src="_images/boot_menu.png" />
+</div>
+</div>
+<div class="section" id="kuruluma-baslayin">
+<h2>Kuruluma Başlayın<a class="headerlink" href="#kuruluma-baslayin" title="Bu başlık için kalıcı bağlantı">¶</a></h2>
+<p>Bilgisayarımızı önyüklediğimiz aygıttan başlattık ve artık her şey hazır. İsterseniz TeArch Linux’u deneyebilirsiniz veya bilgisayarınıza kurabilirsiniz. Kurmak istiyorsanız ağaşıdaki adımları takip etmenizi öneriyoruz…</p>
+</div>
+<div class="section" id="kurulum-araci-kullanimi">
+<h2>Kurulum Aracı Kullanımı<a class="headerlink" href="#kurulum-araci-kullanimi" title="Bu başlık için kalıcı bağlantı">¶</a></h2>
+<p>TeArch Linux başlatıldıktan sonra kurulum aracı otomatik olarak açılmakta. Fakat kurulum aracını kapattıysanız veya kurulum aracı otomatik olarak açılmadıysa, kurulum aracını uygulamalar menüsünden açınız.</p>
+<div class="figure align-default">
+<img alt="TeArch Linux'a ait uygulama menüsü." src="_images/tearch_gnome_appmenu.jpg" />
+</div>
+<div class="section" id="genel-ayarlari-yapmak">
+<h3>Genel Ayarları Yapmak<a class="headerlink" href="#genel-ayarlari-yapmak" title="Bu başlık için kalıcı bağlantı">¶</a></h3>
+<p>Kurulum aracı açıldıktan sonra sırayla; dil, zaman dilimi, klavye ve kullanıcı hesabı ayarlarını yapmanız istenecektir. Bu ayarları nasıl istiyorsanız öyle yapabilirsiniz. Ayrıca kullanıcı hesabı kısmında yaptığınız ayarlamaları bir yere not etmenizi öneriyoruz.</p>
+<div class="figure align-default">
+<img alt="Kullanıcı ayarları kısmı." src="_images/tearch_user_account_settings.png" />
+</div>
+</div>
+<div class="section" id="disk-bolumlemesi">
+<h3>Disk Bölümlemesi<a class="headerlink" href="#disk-bolumlemesi" title="Bu başlık için kalıcı bağlantı">¶</a></h3>
+<p>Kurulumun en önemli kısmı disk bölümlemesidir. Burada yapacağınız en ufak bir hata verilerinizin silinmesine veya kurulumun düzgün gerçekleştirilememesine sebep olabilir. Bu sebepten ötürü bu aşamada dikkatlı olmanızı tavsiye ediyoruz.</p>
+<p>Disk bölüm ekranına geldiğinizde karşınıza 2 seçenek çıkmaktadır. Bunlardan <strong>“Automated Installation”</strong>, diskinizdeki her şeyi silerek yeni bölümler oluşturmaktadır. Eğer başka bölümleriniz varsa <strong>“Manual Partitioning”</strong> seçeneğini seçerek devam edebiliriz.</p>
+<div class="figure align-default">
+<img alt="Disk bölümleme seçeceği kısmı." src="_images/tearch_disk_partitining.png" />
+</div>
+</div>
+<div class="section" id="manual-disk-bolumlemek">
+<h3>Manual Disk Bölümlemek<a class="headerlink" href="#manual-disk-bolumlemek" title="Bu başlık için kalıcı bağlantı">¶</a></h3>
+<p>Manual disk bölümlemeye geçmeden önce sistemimiz <strong>efi</strong> destekliyor mu onu öğrenmeliyiz. Konsola <strong>“efibootmgr”</strong> yazdığımızda çıktı, <strong>“EFI variables are not supported on this system”</strong> şeklinde oluyorsa sistemimiz efi desteklemiyor demektir. Kurulumu yaparken buna dikkat etmemiz gerekecek.</p>
+<div class="section" id="efi-destekleyen-bilgisayarlarda-kurulum-yapmak">
+<h4>EFI Destekleyen Bilgisayarlarda Kurulum Yapmak:<a class="headerlink" href="#efi-destekleyen-bilgisayarlarda-kurulum-yapmak" title="Bu başlık için kalıcı bağlantı">¶</a></h4>
+<p><strong>“Manual Partitioning”</strong> kısmına geldikten sonra bizi bölümlerimiz ve altta 2 buton karşılayacak. Biz yeni bölüm(ler) oluşturmak için alttaki <strong>“Edit Partitions”</strong> butonuna tıklayacağız.</p>
+<p>Eğer bilgisayarımızda FAT32 ile formatlandırılmış bir disk bölümü yoksa elle kendimiz <strong>“EFI Sistem Bölümü” (ESP)</strong> oluşturmak zorundayız. Bunun için GParted’ı açtıktan sonra üstteki <strong>+</strong> simgesine tıklamalıyız. Oluşturacağınız ESP bölümünün özellikleri ise şunlar olmalıdır:</p>
+<p><strong>-</strong> Minimum 512 MiB alan.
+<strong>-</strong> FAT32 dosya sisteminde oluşturmak.
+<strong>-</strong> ESP bayrağı vermek. (Bunu diski oluşturduktan sonra diske sağ tıklayarak <strong>“Manage flags”</strong> menüsüne girerek vereceğiz.</p>
+<p>ESP bölümünü oluşturduktan sonra sıra dosyalarımızın olacağı <strong>ext4</strong> dosya sistemine sahip disk bölümünü olşturmakta. Bu bölüme vereceğiniz alan size bağlı fakat minimum 15G alan vermenizi önermekteyiz.</p>
+<p>Diskleri oluşturup üstteki <strong>tik</strong> işaretine tıkladıktan sonra GParted’a kapatıp kurulum aracımızdaki <strong>“Refresh”</strong> tuşuna basabiliriz. Bu sayede yeni oluşturduğumuz bölümler de kurulum aracına eklenecektir.</p>
+<p>Burada ise yeni oluşturduğumuz 512MiB’lik boot alanını veya daha önce başka işletim sistemleri tarafından oluşturulan EFI alanına sağ tıklayıp <strong>“Assign to /boot/efi”</strong> tuşuna tıklamalıyız. Daha sonra da kendimiz oluşturduğumuz <strong>“ext4”</strong> formatındaki alana sağ tıklayıp <strong>“Assign to /”</strong> tuşuna tıklamalıyız. Artık her şeyimiz hazır, gönül rahatlığıyla <strong>Next</strong> diyebilirsiniz :)</p>
+<div class="figure align-default">
+<img alt="EFI disk bölümlendirme." src="_images/uefi_disk_partitining.png" />
+</div>
+</div>
+<div class="section" id="efi-desteklemeyen-eski-bios-bilgisayarlarda-kurulum-yapmak">
+<h4>EFI Desteklemeyen (Eski BIOS) Bilgisayarlarda Kurulum Yapmak:<a class="headerlink" href="#efi-desteklemeyen-eski-bios-bilgisayarlarda-kurulum-yapmak" title="Bu başlık için kalıcı bağlantı">¶</a></h4>
+<p><strong>“Manual Partitioning”</strong> kısmına geldikten sonra bizi bölümlerimiz ve altta 2 buton karşılayacak. Biz yeni bölüm(ler) oluşturmak için alttaki <strong>“Edit Partitions”</strong> butonuna tıklayacağız.</p>
+<p>İlk yapacağımız şey <strong>ext4</strong> dosya sistemine sahip disk bölümünü olşturmakta. Bu bölüme vereceğiniz alan size bağlı fakat minimum 15G alan vermenizi önermekteyiz.</p>
+<p>Diski oluşturup üstteki <strong>tik</strong> işaretine tıkladıktan sonra GParted’a kapatıp kurulum aracımızdaki <strong>“Refresh”</strong> tuşuna basabiliriz. Bu sayede yeni oluşturduğumuz bölüm(ler) de kurulum aracına eklenecektir.</p>
+<p>Buradaysa kendimiz oluşturduğumuz <strong>“ext4”</strong> formatındaki alana sağ tıklayıp <strong>“Assign to /”</strong> tuşuna tıklamalıyız. Artık her şeyimiz hazır, gönül rahatlığıyla <strong>Next</strong> diyebilirsiniz :)</p>
+<div class="figure align-default">
+<img alt="BIOS disk bölümlendirme." src="_images/bios_disk_partitining.png" />
+</div>
+<div class="admonition note">
+<p class="admonition-title">Not</p>
+<p>Swap bölümünü oluşturmak zorunlu değil,
+bu yüzden anlatmadık. Eğer sistem belleğiniz 2G’dan azsa aynı yöntemleri izleyip “linux-swap”           dosyasistemine sahip bir swap alanı oluşturabilirsiniz. Daha sonra da bu bölümü aktifleştirmek                  için “Assign to swap” tuşuna basabilirsiniz.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Uyarı</p>
+<p>Next dedikten sonra sisteminizin düzgün bir şekilde açılması için
+<strong>“Install the GRUB boot menu on: /dev/sdx”</strong> seçeneğindeki tiki kaldırmayınız lütfen.</p>
+</div>
+</div>
+</div>
+<div class="section" id="beklemek">
+<h3>Beklemek<a class="headerlink" href="#beklemek" title="Bu başlık için kalıcı bağlantı">¶</a></h3>
+<p>Geriye kalan tek şey beklemek… TeArch Linux, sisteminize yaklaşık 15 dakika gibi kısa bir sürede kurulacaktır. Kurulum bittikten sonra bilgisayarınızı yeniden başlatın ve TeArch’ı kullanmaya hemen başlayın :)</p>
+<div class="figure align-default">
+<img alt="Kurulumun bitmesini beklemek..." src="_images/pic02.jpg" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="TeArch Linux Dökümantasyonu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Önceki</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Telif hakkı 2020, Muhammed Efe Çetin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">tema</a>
+    
+    kullanılarak <a href="https://readthedocs.org">Read the Docs</a> tarafından sağlanmasıyla oluşturuldu. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
